@@ -11,6 +11,10 @@ section {
   background: blue;
 }
 
+.taman{
+  height: 420px;;
+}
+
 .nav-bar {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -91,6 +95,50 @@ section {
   margin-left: 20px;
   width: 640px;
   height: 532px;
+
+}
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 16px); 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%; 
+  }
+}
+
+
+@media (min-width: 0px) and (max-width:499px) {
+
+  
+  .width{
+ 
+  width: 99px;
+  height: 60px;
+
+}
+
+.width2{
+  
+  width: 3px;
+  height: 60px;
+  
+}
+
+.width3{
+ 
+  width: 60px;
+  height: 60px;
+
+}
 
 }
 
@@ -294,6 +342,8 @@ section {
   width: 80px;
   
   }
+
+  
   
 
 }
@@ -507,6 +557,15 @@ section {
 
 }
 
+@media (min-width: 0px) and (max-width: 990px) {
+ 
+
+  .taman{
+    height: 299px;;
+  }
+  
+}
+
 @media (min-width: 0px) and (max-width: 978px) {
   .caja {
     display: grid;
@@ -514,6 +573,10 @@ section {
     border: 1px solid #000;
   width: 780px;
   
+  }
+
+  .taman{
+    height: 299px;;
   }
   
 }
@@ -599,16 +662,14 @@ section {
   }
 }
 
+
+
 @media (min-width: 0px) and (max-width: 360px) {
   .item-navbar {
     width: 320px;
   }
 
-  .card-group{ 
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+ 
 }
 
 @media (min-width: 0px) and (max-width: 1164px) {
